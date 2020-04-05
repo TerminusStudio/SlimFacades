@@ -12,6 +12,10 @@ class Facade
 
     public static function __callStatic($method, $args)
     {
+        if (is_object(static::getFacadeAccessor())) {
+            return static::getFacadeAccessor()->$method(...$args);
+        }
+
         return static::self()->$method(...$args);
     }
 
