@@ -1,0 +1,31 @@
+{
+    "name": "terminusstudio/slimfacades",
+    "type": "library",
+    "description": "Laravel like Facade for Slim 4",
+    "keywords": [
+        "TerminusStudio",
+        "Facades",
+        "Slim"
+    ],
+    "homepage": "https://github.com/TerminusStudio/SlimFacades",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TS",
+            "email": "ts@terminus.studio",
+            "homepage": "https://terminus.studio",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TS\\Facades\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
