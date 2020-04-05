@@ -36,10 +36,10 @@ Route::get('/', function ($request, $response) {
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/TerminusStudio/InstaAPI.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/TerminusStudio/SlimFacades.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/TerminusStudio/InstaAPI.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/TerminusStudio/SlimFacades.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/TerminusStudio/InstaAPI
-[link-downloads]: https://packagist.org/packages/TerminusStudio/InstaAPI
+[link-packagist]: https://packagist.org/packages/TerminusStudio/SlimFacades
+[link-downloads]: https://packagist.org/packages/TerminusStudio/SlimFacades
 [link-author]: https://github.com/TerminusStudio
