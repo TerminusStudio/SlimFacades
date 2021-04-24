@@ -1,6 +1,10 @@
 <?php
 namespace TS\Facades;
 
+/**
+ * Class Facade
+ * @package TS\Facades
+ */
 class Facade
 {
     public static $app;

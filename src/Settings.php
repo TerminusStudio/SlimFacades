@@ -1,6 +1,11 @@
 <?php
+
 namespace TS\Facades;
-//TODO: update this class to support slim 4 PHP-DI
+
+/**
+ * Class Settings
+ * @package TS\Facades
+ */
 class Settings extends Facade
 {
     public static function self()
@@ -8,7 +13,7 @@ class Settings extends Facade
         return self::$app;
     }
 
-    public static function get($key = null)
+    public static function get(string $key = null)
     {
         if ($key === null) {
             return self::self()->getContainer()['settings'];
@@ -17,17 +22,9 @@ class Settings extends Facade
         }
     }
 
-    public static function set($key, $value)
+    public static function set(string $key, $value)
     {
-        if (is_array($key)) {
-            $now = self::self()->getContainer()['settings'];
-            foreach ($key as $item) {
-                $now = $now[$item];
-            }
-            $now = $value;
-        } else {
-            $settings = self::self()->getContainer()['settings'];
-            $settings[$key] = $value;
-        }
+        $settings = self::self()->getContainer()['settings'];
+        $settings[$key] = $value;
     }
 }
